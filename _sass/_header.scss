@@ -1,0 +1,37 @@
+/*-------------------Header----------------*/
+
+header .header-wrapper{min-height: 200px; height: auto; width: 100%; box-shadow: 0 3px 5px rgba(0,0,0,0.1); overflow: hidden;}
+header .header-wrapper{background-color: $header-bg; background-position:center;}
+header {position: relative;}
+/*------------------Ascii ART----------------*/
+header .title {vertical-align: middle; text-align: center; color: #5A2E2E; margin: auto; width: 100%;}
+header .title-wrapper{overflow: hidden; display: initial; max-width: 100%;}
+header pre{font-weight: bold; color:000; font-size: 0.3em;}
+header pre{border: none; background: none; margin: 0; padding: 0; overflow: hidden; display: inline-block;}
+header .principal{ font-size:0.6em; display: block;};
+/*-------------------Menu------------------*/
+header .menu-wrapper {position: fixed; height: 100%; width: 200px; z-index: -1; display: none;}
+header #main-menu {padding-top: 10px; top: 55px; position: relative; height: 100%; background-color: $sidebar-color;}
+
+
+#main-menu ul,li,a {margin: 0;  width: 100%; padding: 0; }
+#main-menu li{padding: 10px; padding-left: 10px; padding-right: 0; background-color: $sidebar-hover;}
+#main-menu a {padding-left: 10px; text-decoration: none;}
+#main-menu a:visited, .main-menu a:link {color: #000;}
+#main-menu li:hover, .main-menu li:active { color: #3E4147;}
+
+.menu-wrapper .pure-menu-item {max-height: 50px; border: 0;} 
+.line {
+    width: 35px;
+    height: 4px;
+    background-color: $grey-color;
+    margin: 6px 0;
+}
+
+.menu-btn:hover,
+.menu-btn:focus,
+.menu-btn{ background-color: transparent; position: absolute; z-index: 99; border: 0; border-radius: 5px;}
+
+.show {display: block !important; z-index: 50 !important;}
+.fixed {position: fixed !important; }
+.fixed .line {}
